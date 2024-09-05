@@ -139,7 +139,7 @@ namespace memberlist
 
                     string selectQuery = string.Format("SELECT * FROM account_table");
                     MySqlCommand cmd = new MySqlCommand(selectQuery, conn);
-                    MySqlDataReader reader = cmd.ExecuteReader();
+                    MySqlDataReader reader = cmd.ExecuteReader();    // mysql 데이터를 불러올 때 reader 사용
 
                     listView1.Items.Clear();
 
